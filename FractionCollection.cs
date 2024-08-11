@@ -7,11 +7,11 @@ using System.Xml.Serialization;
 
 namespace CSharp_HW_modul_14_part_01
 {
-    internal class FractionCollection
+    public class FractionCollection
     {
         public FractionCollection() { }
 
-        public List<Fraction> _fractions = new List<Fraction>();
+        List<Fraction> _fractions = new List<Fraction>();
 
         public List<Fraction> Fractions
         { 

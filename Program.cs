@@ -6,7 +6,13 @@
         {
             FractionCollection fractionCollection = new FractionCollection();
             fractionCollection.Add(new Fraction(1, 2), new Fraction(1, 3));
-            FractionManager.XmlSerialize(fractionCollection);
+            FractionManager.XmlSerialize(fractionCollection, @"C:\Users\Brill\Desktop\FractionCollections.xml");
+
+            FractionCollection fractionCollection2 = FractionManager.XmlDeserialize(@"C:\Users\Brill\Desktop\FractionCollections.xml");
+            foreach (Fraction fraction in fractionCollection2.Fractions)
+            {
+                Console.WriteLine(fraction);
+            }
         }
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CSharp_HW_modul_14_part_01
 {
-    internal class Fraction
+    public class Fraction
     {
         public Fraction() { }
 
@@ -19,6 +19,11 @@ namespace CSharp_HW_modul_14_part_01
 
             Numerator = numerator;
             Denominator = denominator;
+        }
+
+        public override string ToString()
+        {
+            return $"{Numerator}/{Denominator}";
         }
     }
 }
